@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6F0551F-F726-4014-96D9-B75167EF47A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SUBEMNET</RootNamespace>
+    <AssemblyName>SUBEMNET</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\HP\Desktop\deneme\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8B09B96A4064ACEF0EBDE98B0FF5EA3F55371636</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SUBEMNET_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\WindowsFormsApp3\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SurveyMonkeyApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b315fe3d1e05c228, processorArchitecture=MSIL">
+      <HintPath>..\packages\SurveyMonkeyApi.3.2.181\lib\net461\SurveyMonkeyApi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AJANDA GİRİŞ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AJANDA GİRİŞ.Designer.cs">
+      <DependentUpon>AJANDA GİRİŞ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANKET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANKET.Designer.cs">
+      <DependentUpon>ANKET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVUKAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVUKAT.Designer.cs">
+      <DependentUpon>AVUKAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AYARLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AYARLAR.Designer.cs">
+      <DependentUpon>AYARLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BELGELER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BELGELER.Designer.cs">
+      <DependentUpon>BELGELER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BORÇ EKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BORÇ EKLE.Designer.cs">
+      <DependentUpon>BORÇ EKLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BORÇLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BORÇLAR.Designer.cs">
+      <DependentUpon>BORÇLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Davranışlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Davranışlar.Designer.cs">
+      <DependentUpon>Davranışlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOSYADAN SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOSYADAN SMS.Designer.cs">
+      <DependentUpon>DOSYADAN SMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosyaSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaSMS.Designer.cs">
+      <DependentUpon>DosyaSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DİĞERGELİRLİSTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DİĞERGELİRLİSTE.Designer.cs">
+      <DependentUpon>DİĞERGELİRLİSTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DİĞER_GELİR_EKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DİĞER_GELİR_EKLE.Designer.cs">
+      <DependentUpon>DİĞER_GELİR_EKLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ETKİNLİK EKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETKİNLİK EKLE.Designer.cs">
+      <DependentUpon>ETKİNLİK EKLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ETKİNLİKLER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETKİNLİKLER.Designer.cs">
+      <DependentUpon>ETKİNLİKLER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ETÜT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETÜT.Designer.cs">
+      <DependentUpon>ETÜT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EĞİTİM_DESTEK_TOPLU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EĞİTİM_DESTEK_TOPLU.Designer.cs">
+      <DependentUpon>EĞİTİM_DESTEK_TOPLU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FATURA_ISLEME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FATURA_ISLEME.Designer.cs">
+      <DependentUpon>FATURA_ISLEME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiyatListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatListesi.Designer.cs">
+      <DependentUpon>FiyatListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FİNANS_RAPORU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FİNANS_RAPORU.Designer.cs">
+      <DependentUpon>FİNANS_RAPORU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GECİKEN_ÖDEME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GECİKEN_ÖDEME.Designer.cs">
+      <DependentUpon>GECİKEN_ÖDEME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIDERLER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIDERLER.Designer.cs">
+      <DependentUpon>GIDERLER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUNLUK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUNLUK.Designer.cs">
+      <DependentUpon>GUNLUK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GİDERLİSTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GİDERLİSTE.Designer.cs">
+      <DependentUpon>GİDERLİSTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KAYIT SİLME İŞLEMLERİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KAYIT SİLME İŞLEMLERİ.Designer.cs">
+      <DependentUpon>KAYIT SİLME İŞLEMLERİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KAYIT İADE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KAYIT İADE.Designer.cs">
+      <DependentUpon>KAYIT İADE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotGirisi.Designer.cs">
+      <DependentUpon>NotGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SorunCozumleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SorunCozumleri.Designer.cs">
+      <DependentUpon>SorunCozumleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeliGorusuGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliGorusuGirisi.Designer.cs">
+      <DependentUpon>VeliGorusuGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAALİYET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAALİYET.Designer.cs">
+      <DependentUpon>FAALİYET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HAZIRSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HAZIRSMS.Designer.cs">
+      <DependentUpon>HAZIRSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IKSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IKSMS.Designer.cs">
+      <DependentUpon>IKSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KİTAPHAREKETLERİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KİTAPHAREKETLERİ.Designer.cs">
+      <DependentUpon>KİTAPHAREKETLERİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KİTAPLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KİTAPLAR.Designer.cs">
+      <DependentUpon>KİTAPLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KİTAPLAR_RAPOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KİTAPLAR_RAPOR.Designer.cs">
+      <DependentUpon>KİTAPLAR_RAPOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAŞ_KONTROL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAŞ_KONTROL.Designer.cs">
+      <DependentUpon>MAAŞ_KONTROL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAAŞ_ÖDEME_TOPLU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAAŞ_ÖDEME_TOPLU.Designer.cs">
+      <DependentUpon>MAAŞ_ÖDEME_TOPLU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesaiKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesaiKontrol.Designer.cs">
+      <DependentUpon>MesaiKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MESAİ_DÜZENLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MESAİ_DÜZENLE.Designer.cs">
+      <DependentUpon>MESAİ_DÜZENLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUHASEBE_NOTU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUHASEBE_NOTU.Designer.cs">
+      <DependentUpon>MUHASEBE_NOTU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MÜŞTERİLER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MÜŞTERİLER.Designer.cs">
+      <DependentUpon>MÜŞTERİLER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler.Designer.cs">
+      <DependentUpon>Ogrenciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciKayit.Designer.cs">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciProfil.Designer.cs">
+      <DependentUpon>OgrenciProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciYoklama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciYoklama.Designer.cs">
+      <DependentUpon>OgrenciYoklama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnKayitGorusmeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnKayitGorusmeler.Designer.cs">
+      <DependentUpon>OnKayitGorusmeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL.Designer.cs">
+      <DependentUpon>PERSONEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelAtamaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelAtamaListesi.Designer.cs">
+      <DependentUpon>PersonelAtamaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDevamTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelDevamTakip.Designer.cs">
+      <DependentUpon>PersonelDevamTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL_LİSTESİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL_LİSTESİ.Designer.cs">
+      <DependentUpon>PERSONEL_LİSTESİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelÖzelSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelÖzelSMS.Designer.cs">
+      <DependentUpon>PersonelÖzelSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PRİM_KESİNTİ_KONTROL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRİM_KESİNTİ_KONTROL.Designer.cs">
+      <DependentUpon>PRİM_KESİNTİ_KONTROL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REVİR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REVİR.Designer.cs">
+      <DependentUpon>REVİR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TakımÇalışması.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakımÇalışması.Designer.cs">
+      <DependentUpon>TakımÇalışması.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TEDARIKCILER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TEDARIKCILER.Designer.cs">
+      <DependentUpon>TEDARIKCILER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOPLANTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOPLANTI.Designer.cs">
+      <DependentUpon>TOPLANTI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeliRandevuOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliRandevuOlustur.Designer.cs">
+      <DependentUpon>VeliRandevuOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VİRMAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VİRMAN.Designer.cs">
+      <DependentUpon>VİRMAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEK GİRİŞİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YEMEK GİRİŞİ.Designer.cs">
+      <DependentUpon>YEMEK GİRİŞİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEK LİSTESİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YEMEK LİSTESİ.Designer.cs">
+      <DependentUpon>YEMEK LİSTESİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÇEKveSENET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÇEKveSENET.Designer.cs">
+      <DependentUpon>ÇEKveSENET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖNKAYITSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖNKAYITSMS.Designer.cs">
+      <DependentUpon>ÖNKAYITSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖnKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖnKayıt.Designer.cs">
+      <DependentUpon>ÖnKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖĞRENCİ ÖDEME TOPLU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖĞRENCİ ÖDEME TOPLU.Designer.cs">
+      <DependentUpon>ÖĞRENCİ ÖDEME TOPLU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖĞRENCİÖZELSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖĞRENCİÖZELSMS.Designer.cs">
+      <DependentUpon>ÖĞRENCİÖZELSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İK_GÖRÜŞMELERİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İK_GÖRÜŞMELERİ.Designer.cs">
+      <DependentUpon>İK_GÖRÜŞMELERİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İNDİRİMLİLER LİSTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İNDİRİMLİLER LİSTE.Designer.cs">
+      <DependentUpon>İNDİRİMLİLER LİSTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İnsanKaynaklarıListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnsanKaynaklarıListe.Designer.cs">
+      <DependentUpon>İnsanKaynaklarıListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İnsanKaynkaları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnsanKaynkaları.Designer.cs">
+      <DependentUpon>İnsanKaynkaları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İZİN_LİSTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İZİN_LİSTES.Designer.cs">
+      <DependentUpon>İZİN_LİSTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İÇ KAYIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İÇ KAYIT.Designer.cs">
+      <DependentUpon>İÇ KAYIT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AJANDA GİRİŞ.resx">
+      <DependentUpon>AJANDA GİRİŞ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANKET.resx">
+      <DependentUpon>ANKET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVUKAT.resx">
+      <DependentUpon>AVUKAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AYARLAR.resx">
+      <DependentUpon>AYARLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BELGELER.resx">
+      <DependentUpon>BELGELER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BORÇ EKLE.resx">
+      <DependentUpon>BORÇ EKLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BORÇLAR.resx">
+      <DependentUpon>BORÇLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Davranışlar.resx">
+      <DependentUpon>Davranışlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOSYADAN SMS.resx">
+      <DependentUpon>DOSYADAN SMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosyaSMS.resx">
+      <DependentUpon>DosyaSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DİĞERGELİRLİSTE.resx">
+      <DependentUpon>DİĞERGELİRLİSTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DİĞER_GELİR_EKLE.resx">
+      <DependentUpon>DİĞER_GELİR_EKLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ETKİNLİK EKLE.resx">
+      <DependentUpon>ETKİNLİK EKLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ETKİNLİKLER.resx">
+      <DependentUpon>ETKİNLİKLER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ETÜT.resx">
+      <DependentUpon>ETÜT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EĞİTİM_DESTEK_TOPLU.resx">
+      <DependentUpon>EĞİTİM_DESTEK_TOPLU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FATURA_ISLEME.resx">
+      <DependentUpon>FATURA_ISLEME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiyatListesi.resx">
+      <DependentUpon>FiyatListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FİNANS_RAPORU.resx">
+      <DependentUpon>FİNANS_RAPORU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GECİKEN_ÖDEME.resx">
+      <DependentUpon>GECİKEN_ÖDEME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIDERLER.resx">
+      <DependentUpon>GIDERLER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUNLUK.resx">
+      <DependentUpon>GUNLUK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GİDERLİSTE.resx">
+      <DependentUpon>GİDERLİSTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HAZIRSMS.resx">
+      <DependentUpon>HAZIRSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KAYIT SİLME İŞLEMLERİ.resx">
+      <DependentUpon>KAYIT SİLME İŞLEMLERİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KAYIT İADE.resx">
+      <DependentUpon>KAYIT İADE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotGirisi.resx">
+      <DependentUpon>NotGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SorunCozumleri.resx">
+      <DependentUpon>SorunCozumleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeliGorusuGirisi.resx">
+      <DependentUpon>VeliGorusuGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAALİYET.resx">
+      <DependentUpon>FAALİYET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IKSMS.resx">
+      <DependentUpon>IKSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KİTAPHAREKETLERİ.resx">
+      <DependentUpon>KİTAPHAREKETLERİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KİTAPLAR.resx">
+      <DependentUpon>KİTAPLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KİTAPLAR_RAPOR.resx">
+      <DependentUpon>KİTAPLAR_RAPOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAŞ_KONTROL.resx">
+      <DependentUpon>MAAŞ_KONTROL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAAŞ_ÖDEME_TOPLU.resx">
+      <DependentUpon>MAAŞ_ÖDEME_TOPLU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesaiKontrol.resx">
+      <DependentUpon>MesaiKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MESAİ_DÜZENLE.resx">
+      <DependentUpon>MESAİ_DÜZENLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUHASEBE_NOTU.resx">
+      <DependentUpon>MUHASEBE_NOTU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MÜŞTERİLER.resx">
+      <DependentUpon>MÜŞTERİLER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler.resx">
+      <DependentUpon>Ogrenciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciKayit.resx">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciProfil.resx">
+      <DependentUpon>OgrenciProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciYoklama.resx">
+      <DependentUpon>OgrenciYoklama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnKayitGorusmeler.resx">
+      <DependentUpon>OnKayitGorusmeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL.resx">
+      <DependentUpon>PERSONEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelAtamaListesi.resx">
+      <DependentUpon>PersonelAtamaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelDevamTakip.resx">
+      <DependentUpon>PersonelDevamTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL_LİSTESİ.resx">
+      <DependentUpon>PERSONEL_LİSTESİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelÖzelSMS.resx">
+      <DependentUpon>PersonelÖzelSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PRİM_KESİNTİ_KONTROL.resx">
+      <DependentUpon>PRİM_KESİNTİ_KONTROL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REVİR.resx">
+      <DependentUpon>REVİR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakımÇalışması.resx">
+      <DependentUpon>TakımÇalışması.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TEDARIKCILER.resx">
+      <DependentUpon>TEDARIKCILER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOPLANTI.resx">
+      <DependentUpon>TOPLANTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeliRandevuOlustur.resx">
+      <DependentUpon>VeliRandevuOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VİRMAN.resx">
+      <DependentUpon>VİRMAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YEMEK GİRİŞİ.resx">
+      <DependentUpon>YEMEK GİRİŞİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YEMEK LİSTESİ.resx">
+      <DependentUpon>YEMEK LİSTESİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÇEKveSENET.resx">
+      <DependentUpon>ÇEKveSENET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖNKAYITSMS.resx">
+      <DependentUpon>ÖNKAYITSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖnKayıt.resx">
+      <DependentUpon>ÖnKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖĞRENCİ ÖDEME TOPLU.resx">
+      <DependentUpon>ÖĞRENCİ ÖDEME TOPLU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖĞRENCİÖZELSMS.resx">
+      <DependentUpon>ÖĞRENCİÖZELSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İK_GÖRÜŞMELERİ.resx">
+      <DependentUpon>İK_GÖRÜŞMELERİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İNDİRİMLİLER LİSTE.resx">
+      <DependentUpon>İNDİRİMLİLER LİSTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İnsanKaynaklarıListe.resx">
+      <DependentUpon>İnsanKaynaklarıListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İnsanKaynkaları.resx">
+      <DependentUpon>İnsanKaynkaları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İZİN_LİSTES.resx">
+      <DependentUpon>İZİN_LİSTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İÇ KAYIT.resx">
+      <DependentUpon>İÇ KAYIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Properties\ÖRNEK_DOSYA_FORMATI.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DersDagitim\DersDagitim.csproj">
+      <Project>{2482c621-b091-4786-8c9b-6aca3636e9ce}</Project>
+      <Name>DersDagitim</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,80 @@
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.csprojAssemblyReference.cache
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.AkilliDagitimForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.AnaForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.BilgiGirisForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.DersProgramiOnIzlemeForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.DersTanimlamaForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.ElProgramiFrm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.formHakkinda.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.GenelAyarlar.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.KontrolForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.KosulForm.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.Properties.Resources.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.TanimliDersAnaliz.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.TanimliDersListesi.resources
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.csproj.GenerateResource.cache
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DersDagitim.csproj.CoreCompileInputs.cache
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\bin\Debug\DağıtMatik.exe
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\bin\Debug\DağıtMatik.pdb
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DağıtMatik.exe
+C:\Users\CANIM OĞLUM\Desktop\dersprogramı\DersDagitim\obj\Debug\DağıtMatik.pdb
+C:\Users\HP\Desktop\DersDagitim\bin\Debug\DağıtMatik.exe
+C:\Users\HP\Desktop\DersDagitim\bin\Debug\DağıtMatik.pdb
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.AkilliDagitimForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.AnaForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.BilgiGirisForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.DersProgramiOnIzlemeForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.DersTanimlamaForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.ElProgramiFrm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.formHakkinda.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.GenelAyarlar.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.KontrolForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.KosulForm.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.Properties.Resources.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.TanimliDersAnaliz.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.TanimliDersListesi.resources
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DersDagitim.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DağıtMatik.exe
+C:\Users\HP\Desktop\DersDagitim\obj\Debug\DağıtMatik.pdb
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\bin\Debug\DağıtMatik.exe
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\bin\Debug\DağıtMatik.pdb
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.csprojAssemblyReference.cache
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.AkilliDagitimForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.AnaForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.BilgiGirisForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.DersProgramiOnIzlemeForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.DersTanimlamaForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.ElProgramiFrm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.formHakkinda.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.GenelAyarlar.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.KontrolForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.KosulForm.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.Properties.Resources.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.TanimliDersAnaliz.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.TanimliDersListesi.resources
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.csproj.GenerateResource.cache
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DersDagitim.csproj.CoreCompileInputs.cache
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DağıtMatik.exe
+C:\Users\CANIM OĞLUM\Desktop\sub\DersDagitim\obj\Debug\DağıtMatik.pdb
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\bin\Debug\DağıtMatik.exe
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\bin\Debug\DağıtMatik.pdb
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.AkilliDagitimForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.AnaForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.BilgiGirisForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.DersProgramiOnIzlemeForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.DersTanimlamaForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.ElProgramiFrm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.formHakkinda.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.GenelAyarlar.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.KontrolForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.KosulForm.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.Properties.Resources.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.TanimliDersAnaliz.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.TanimliDersListesi.resources
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DersDagitim.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DağıtMatik.exe
+C:\Users\HP\source\repos\SUBEMNET\DersDagitim\obj\Debug\DağıtMatik.pdb
